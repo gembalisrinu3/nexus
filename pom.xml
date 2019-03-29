@@ -73,4 +73,17 @@
       </plugins>
     </pluginManagement>
   </build>
+   <distributionManagement>
+    <repository>
+      <id>deployment</id>
+      <name>Internal Release</name>
+      <url>http://localhost:8081/repository/maven-release-test/</url>
+    </repository>
+    <snapshotRepository>
+      <id>deployment</id>
+      <name>Internal Snapshot Release</name>
+      <url>http://localhost:8081/repository/maven-snapshot-test/</url>
+    </snapshotRepository>
+
+  </distributionManagement>
 </project>
